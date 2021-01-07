@@ -9,9 +9,9 @@ def load_library(file_path)
     emoticons[meaning] = emoticons
     emoji_array.each_with_index do |emoji, index|
       if index == 0
-        emoji = emoticons[:english]
+        emoticons[:english] = emoji
       else
-        emoji = emoticons[:japanese]
+        emoticons[:japanese] = emoji
       end
     end
   end
