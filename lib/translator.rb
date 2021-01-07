@@ -4,7 +4,7 @@ require 'yaml'
 def load_library(file_path)
   # code goes here
   emoji_library = YAML.load_file(file_path)
-  emoticons = {:english => '', :japanese => ''}
+  emoticons = {:english => {}, :japanese => {}}
   emoji_library.each do |meaning, emoji_array|
     emoticons = emoticons[meaning]
     emoji_array.each_with_index do |emoji, index|
