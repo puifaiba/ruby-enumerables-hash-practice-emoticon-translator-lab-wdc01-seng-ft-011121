@@ -7,6 +7,10 @@ def load_library(file_path)
   emoticons = {:english => {}, :japanese => {}}
   emoji_library.each do |meaning, emoji_array|
     emoticons[meaning] = emoticons
+    emoji_array.each do |emoji|
+      emoji[0] = emoticons[meaning][:english]
+      emoji[1] = emoticons[meaning][:japanese]
+    end
   end
   emoticons
 end
