@@ -32,5 +32,6 @@ def get_japanese_emoticon(file_path, emoticon)
   hash.each do |meaning, emojis|
     if emojis[:english] = emoticon
       return emojis[:japanese]
+    end
   end
 end
