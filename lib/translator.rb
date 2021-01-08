@@ -22,10 +22,7 @@ end
 
 def get_japanese_emoticon(file_path, emoji)
   # code goes here
-  file = load_library(file_path)
-  file.each do |meaning, emojis|
-  if emoji = emoticons[meaning][:english]
-    emoticons[meaning][:japanese]
+
 end
 
 
