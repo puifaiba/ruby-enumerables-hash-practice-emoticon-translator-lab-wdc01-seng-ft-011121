@@ -9,8 +9,6 @@ def load_library(file_path)
     emoticons[meaning] = {:english => "", :japanese => ""}
     emoticons[meaning][:english] = emoji_array[0]
     emoticons[meaning][:japanese] = emoji_array[1]
-      end
-    end
   end
   emoticons
 end
